@@ -1,0 +1,36 @@
+{
+  "name": "Bluesky投稿",
+  "short_name": "BSky投稿",
+  "description": "Blueskyに画像付き投稿するアプリ",
+  "start_url": "/bluesky-post/",
+  "scope": "/bluesky-post/",
+  "display": "standalone",
+  "background_color": "#0f0f13",
+  "theme_color": "#0085ff",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/bluesky-post/",
+    "method": "GET",
+    "params": {
+      "files": [
+        {
+          "name": "images",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  }
+}
